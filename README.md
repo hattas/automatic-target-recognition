@@ -11,13 +11,21 @@ Professor: [Dong Hye Ye, Ph.D.](https://sites.google.com/site/yedonghye/)
 * **[John Hattas](https://github.com/johnhattas)**
 * **[Nathan Lang](https://github.com/Nathanlang14)**
 
-## ATR
+## Resources
+### Python
+**[NiBabel](http://nipy.org/nibabel/)** - read / write access to some common neuroimaging file formats<br>
+[PyNifti](http://niftilib.sourceforge.net/pynifti/) - older version of NiBabel
+
+### Visualization
+[MIPAV](https://mipav.cit.nih.gov/) - quantitative analysis and visualization of medical images
+
+## Details
 
 ### Targets
 * Saline
   * 3.5%, 10%, 15% concentrations
 * Modeling (polymer) clay
-* Rubber sheets: ¼” thickness (minimum) + other rubber in bags
+* Rubber sheets: Â¼â€ thickness (minimum) + other rubber in bags
 
 ### Non-Targets
 * Food
@@ -63,10 +71,3 @@ Goal: PD > 90%, PFA < 10%
 ### Data Files
 Nifti file format: Standard Neuroimaging File Format<br>
 .nii.gz: gzipped image
-
-#### Python
-[PyNifti](http://niftilib.sourceforge.net/pynifti/)<br>
-[NiBabel](http://nipy.org/nibabel/) (newer version of PyNifti)
-
-#### Visualization
-[MIPAV](https://mipav.cit.nih.gov/)
