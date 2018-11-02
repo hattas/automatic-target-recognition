@@ -19,9 +19,7 @@ def show_slices(slices):
         return ax;
     
     nslices = len(slices)
-    d = get_subplot_dim(nslices)
-    nrows = d[0]
-    ncols = d[1]
+    nrows, ncols = get_subplot_dim(nslices)
     maxcols = 10
     if ncols > maxcols:
         ncols = maxcols
@@ -40,3 +38,21 @@ def show_slices(slices):
         else:
             axes[row, col].axis('off')
     plt.show()
+
+def plot_dim(img, dim):
+    if dim not in range(3):
+        raise ValueError('Dim {} not in range 0, 1, 2.'.format(dim))
+    data = img.get_fdata();
+    slices = []
+    for i in range(data.shape[dim]):
+        if dim == 0:
+            slice = data[i, :, :]
+        elif dim == 1:
+            slice = data[:, i, :]
+        elif dim == 2:
+            slice = data[:, :, i]
+        slices.append(slice)
+    show_slices(slices)
+
+def print_shape(df):
+    print('shape={}'.format(df.shape))
