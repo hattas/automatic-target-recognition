@@ -1,2 +1,3 @@
 .ipynb_checkpoints
 *.nii.gz
+/__pycache__
