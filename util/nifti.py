@@ -39,10 +39,9 @@ def show_slices(slices):
             axes[row, col].axis('off')
     plt.show()
 
-def plot_dim(img, dim):
+def plot_dim(data, dim):
     if dim not in range(3):
         raise ValueError('Dim {} not in range 0, 1, 2.'.format(dim))
-    data = img.get_fdata();
     slices = []
     for i in range(data.shape[dim]):
         if dim == 0:
