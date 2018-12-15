@@ -37,6 +37,7 @@ def show_slices(slices):
                 axes[row, col] = make_axes(axes[row, col], slice)
         else:
             axes[row, col].axis('off')
+    plt.savefig('a.pdf')
     plt.show()
 
 def plot_dim(data, dim):
